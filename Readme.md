@@ -78,6 +78,10 @@ On a 96K or 128K with a `.LDF` image mounted: `XROM`, then `EXT DIR`, `EXT LOAD 
 first sector) until the disk is read; on a 48K it says `DISK: MODEL 96K / 128K`, as the 48K has no
 disk interface.
 
+Both LDF sizes from MAME's `camplynx_flop` list work: 200K (40 tracks, single sided) and 800K
+(80 tracks, double sided). All 28 disks in the list have been tested; the Lynx Revival Group disk
+menu needs the 128K, as on MAME.
+
 ## ROMs
 
 The core has the Lynx ROMs built in (the MAME sets `lynx48k`, `lynx96k`, `lynx128k` and the
