@@ -53,7 +53,8 @@ Tape formats:
   `TAPE 1` to `TAPE 5` (900 to 2100 baud, set before LOAD) are followed on the 48K / 96K, which
   together with 4x turbo makes `TAPE 5` loads very quick.
 - `.TZX` (made from recordings, e.g. with rcmolina's CamputersLYNX tools for Kyp's cores): played
-  as recorded; type the `TAPE n` the file name says before loading.
+  as recorded; type the `TAPE n` the file name says before loading. PgUp / PgDn start and stop a
+  TZX by hand (it also starts and stops with the motor).
 - `.WAV` (8- or 16-bit PCM, any rate, e.g. real tape captures or lynx2wav output): played as
   recorded, like the line-in; type the `TAPE n` it was recorded at.
 
@@ -67,6 +68,8 @@ and the letters give capitals without Shift.
 
 Real cassettes can be loaded through the MiSTer's audio line-in.
 
+Joysticks: the two Lynx joystick ports (up / down / left / right / fire); Swap joysticks exchanges them.
+
 ### Disk
 
 On a 96K or 128K with a `.LDF` image mounted: `XROM`, then `EXT DIR`, `EXT LOAD "NAME"`,
@@ -74,6 +77,10 @@ On a 96K or 128K with a `.LDF` image mounted: `XROM`, then `EXT DIR`, `EXT LOAD 
 `TYPE XROM↵`, then `TYPE EXT DIR↵` (or `TYPE EXT BOOT↵` for a CP/M boot disk, recognised from its
 first sector) until the disk is read; on a 48K it says `DISK: MODEL 96K / 128K`, as the 48K has no
 disk interface.
+
+Both LDF sizes from MAME's `camplynx_flop` list work: 200K (40 tracks, single sided) and 800K
+(80 tracks, double sided). All 28 disks in the list have been tested; the Lynx Revival Group disk
+menu needs the 128K, as on MAME.
 
 ## ROMs
 
